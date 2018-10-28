@@ -2,7 +2,7 @@
   "name": "promise-center",
   "version": "1.0.0",
   "description": "A lib to get and set promise",
-  "main": "index.js",
+  "main": "dist/promiseCenter.js",
   "directories": {
     "test": "test"
   },
@@ -23,7 +23,7 @@
     "url": "https://github.com/huijian3139/promise-center/issues"
   },
   "homepage": "https://github.com/huijian3139/promise-center#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
