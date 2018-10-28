@@ -1,0 +1,32 @@
+# node
+node_modules
+npm-debug.log*
+.npm
+
+# test files
+.nyc_output
+coverage
+coverage-integration
+localStorage
+
+# built files
+dist
+
+# DS Store
+**/.DS_Store
+
+# newrelic logs
+newrelic_agent.log
+
+# vim backup files
+**/*.swp
+**/*.swo
+
+# next
+.next
+
+# source maps
+source_maps
+
+#lighthouse reports
+reports

@@ -1,0 +1,47 @@
+{
+  "presets": ["es2015", "react", "stage-0"],
+
+  "env" : {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    },
+    "production" : {
+      // For better React performance, but only in production env. Otherwise, warning & error
+      // message would be very tricky in development mode.
+      // refer to: https://wiki.hulu.com/pages/viewpage.action?pageId=45945178
+      //
+      "presets": ["react-optimize"]
+    }
+  },
+
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        // add alias here to for easy import/require resolution
+        // e.g. in file './shared/components/onboarding/index.js',
+        // if it wants to import file './server/lib/config.js', no need to do
+        // ```
+        //   import from '../../../server/lib/config.js'
+        // ```
+        // Just do
+        // ```
+        //   import from '$server/lib/config.js'
+        // ```
+        // NOTE: please keep all alias starts with character $ as a convention
+        "alias":
+        {
+          "$root" : "./",
+          "$shared" : "./shared",
+          "$server" : "./server",
+          "$client" : "./client",
+          "$test" : "./test",
+          "$components" : "./shared/components"
+        }
+      }
+    ]
+  ]
+
+}
