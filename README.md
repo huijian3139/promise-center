@@ -19,3 +19,4 @@ promiseB.then(console.log);
 
 setPromise('jason', Promise.resolve('Hello Jason!'));
 ```
+More usage, see test/promiseCenter.test.js
