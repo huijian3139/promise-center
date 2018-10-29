@@ -22,8 +22,8 @@ export const getPromise = (key) => {
 
 export const setPromise = (key, value) => {
   if (promiseCenter[key] && promiseCenter[key].pending) {
-    promiseCenter[key].resolve(value);
-    promiseCenter[key].reject(value);
+    const {resolve, reject} = promiseCenter[key];
+    value.then(resolve, reject);
     promiseCenter[key].pending = false;
   } else {
     promiseCenter[key] = createPromiseObject(value);
