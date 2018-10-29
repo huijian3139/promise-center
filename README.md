@@ -1,5 +1,9 @@
 # promise-center
 A lib to set and get promise. You can get a promise before set it!
+Installation
+```
+npm install promise-center
+```
 
 Usage 1:
 ```
